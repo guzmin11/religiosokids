@@ -19,7 +19,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -97,6 +97,30 @@
             color: var(--text-dark);
             text-decoration: underline;
         }
+
+        @media (max-width: 768px) {
+            .downsell-container {
+                padding: 25px 15px;
+                margin: 20px auto;
+            }
+
+            .downsell-headline {
+                font-size: 1.8rem;
+            }
+
+            .downsell-text {
+                font-size: 1.1rem;
+            }
+
+            .final-price {
+                font-size: 3rem;
+            }
+
+            .discount-badge {
+                font-size: 0.9rem;
+                padding: 8px 15px;
+            }
+        }
     </style>
 </head>
 
@@ -121,12 +145,12 @@
             <div class="final-price">R$ 10,00</div>
             <p style="color: var(--text-light); margin-bottom: 30px;">(Pagamento único, sem mensalidades)</p>
 
-            <a href="https://checkout.crescendocomdeus.site/VCCL1O8SCUK5" class="cta-button giant pulse"
+            <a href="https://pay.kiwify.com.br/LINK_DOWNSELL" class="cta-button giant pulse"
                 style="max-width: 100%; background-color: #10B981; box-shadow: 0 6px 0 #059669;">
                 SIM, QUERO APROVEITAR ESSA ÚLTIMA CHANCE
             </a>
 
-            <a href="obrigado" class="no-thanks-link">
+            <a href="obrigado.html" class="no-thanks-link">
                 Não, prefiro perder essa oportunidade e encerrar meu pedido.
             </a>
         </div>
@@ -134,6 +158,4 @@
 
 </body>
 
-
 </html>
-

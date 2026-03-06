@@ -19,7 +19,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -80,10 +80,37 @@
         @media (max-width: 768px) {
             .upsell-content-split {
                 flex-direction: column;
+                gap: 20px;
             }
 
             .upsell-headline {
                 font-size: 1.8rem;
+            }
+
+            .upsell-features {
+                text-align: left;
+            }
+
+            .upsell-features li {
+                font-size: 1rem;
+            }
+
+            .special-offer-box {
+                padding: 20px 15px;
+            }
+
+            .receive-grid {
+                grid-template-columns: 1fr !important;
+                gap: 15px !important;
+                text-align: left !important;
+            }
+
+            .price-tag {
+                font-size: 2.5rem;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr !important;
             }
         }
 
@@ -126,6 +153,15 @@
             padding: 30px;
             text-align: center;
             margin-bottom: 40px;
+        }
+
+        .receive-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            text-align: left;
+            gap: 10px;
+            margin: 20px 0;
+            font-size: 0.95rem;
         }
 
         .price-tag {
@@ -209,8 +245,7 @@
             </div>
 
             <p style="font-weight: 700; color: var(--primary-color);">O QUE VOCÊ RECEBE:</p>
-            <div
-                style="display: grid; grid-template-columns: 1fr 1fr; text-align: left; gap: 10px; margin: 20px 0; font-size: 0.95rem;">
+            <div class="receive-grid">
                 <div>✔️ Bíblia ilustrada infantil</div>
                 <div>✔️ 365 devocionais bíblicos</div>
                 <div>✔️ Linguagem simples para crianças</div>
@@ -225,11 +260,11 @@
                 <span>R$ 67</span> R$ 27,90
             </div>
 
-            <a href="https://checkout.crescendocomdeus.site/VCCL1O8SCUK4" class="cta-button giant pulse" style="max-width: 100%;">
+            <a href="https://pay.kiwify.com.br/LINK_UPSELL" class="cta-button giant pulse" style="max-width: 100%;">
                 SIM, QUERO ADICIONAR AO MEU PEDIDO
             </a>
 
-            <a href="ultimo" class="no-thanks">
+            <a href="ultimo.html" class="no-thanks">
                 Não, prefiro continuar apenas com meu pedido atual.
             </a>
         </div>
@@ -256,6 +291,4 @@
 
 </body>
 
-
 </html>
-

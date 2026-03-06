@@ -19,7 +19,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -82,7 +82,7 @@
 <body>
 
     <div class="container">
-        <div class="success-container fade-in">
+        <div class="success-container">
             <i class="fas fa-check-circle success-icon"></i>
             <h1 class="success-headline">Parabéns! Seu pedido foi concluído.</h1>
             <p class="success-text">Você acaba de dar um passo importante na educação cristã do seu filho.</p>
@@ -91,8 +91,14 @@
                 <h4><i class="fas fa-envelope"></i> Como acessar seu material?</h4>
                 <p>Está tudo disponível em nossa plataforma. Já enviamos agora mesmo um e-mail com o link de acesso
                     exclusivo para você baixar o material.</p>
-                <p style="font-size: 0.9rem; margin-top: 10px; color: #6B7280;">(Verifique também sua pasta de Spam ou
+                <p style="font-size: 0.9rem; margin-top: 10px; color: #6B7280; margin-bottom: 20px;">(Verifique também
+                    sua pasta de Spam ou
                     Promoções)</p>
+
+                <a href="https://crescendocomdeus.site/login" class="cta-button pulse"
+                    style="max-width: 100%; display: block; text-align: center;">
+                    <i class="fas fa-rocket"></i> ACESSAR MEUS MATERIAIS AGORA
+                </a>
             </div>
 
             <p style="font-weight: 700;">Precisa de ajuda?</p>
@@ -104,6 +110,7 @@
         </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
