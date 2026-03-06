@@ -733,11 +733,41 @@ h6 {
     padding: 15px;
     border-radius: var(--radius-sm);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.bonus-icon-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.bonus-item-text {
+    flex: 1;
 }
 
 .bonus-item p {
     margin: 0;
     font-weight: 600;
+}
+
+.bonus-price-before {
+    font-size: 0.85rem;
+    color: #EF4444;
+    /* Vermelho */
+    text-decoration: line-through;
+}
+
+.bonus-price-after {
+    font-size: 0.9rem;
+    color: #10B981;
+    /* Verde */
+    font-weight: 700;
+}
+
+.bonus-item-text p {
+    margin-bottom: 2px !important;
 }
 
 .conscience-phrase {
