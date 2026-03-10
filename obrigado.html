@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido Concluido | Crescendo Com Deus</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1423261069542248');
+        fbq('track', 'PageView');
+        fbq('track', 'Purchase', { value: 19.90, currency: 'BRL' });
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1423261069542248&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+    <style>
+        .success-container {
+            max-width: 600px;
+            margin: 100px auto;
+            text-align: center;
+            padding: 40px;
+            background: white;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .success-icon {
+            font-size: 5rem;
+            color: #10B981;
+            margin-bottom: 20px;
+            animation: scale-up 0.5s ease;
+        }
+
+        .success-headline {
+            font-size: 2rem;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+
+        .success-text {
+            color: var(--text-light);
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .access-info {
+            background: var(--bg-soft-blue);
+            padding: 20px;
+            border-radius: var(--radius-md);
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .access-info h4 {
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="success-container">
+            <i class="fas fa-check-circle success-icon"></i>
+            <h1 class="success-headline">Acesso Liberado!</h1>
+            <p class="success-text">Seu pedido foi processado com sucesso. Prepare-se para momentos incríveis com as crianças!</p>
+
+            <div class="access-info">
+                <h4><i class="fas fa-envelope"></i> Onde está meu material?</h4>
+                <p>O link de acesso foi enviado agora mesmo para o seu <strong>e-mail</strong> cadastrado.</p>
+                <p style="margin-top: 10px;">Você também pode acessar seus materiais diretamente na plataforma <strong>Vega</strong>.</p>
+                
+                <a href="https://vegapagos.com.br/" class="cta-button pulse"
+                    style="max-width: 100%; display: block; text-align: center; margin-top: 20px;">
+                    <i class="fas fa-external-link-alt"></i> IR PARA PÁGINA DO VEGA
+                </a>
+            </div>
+
+            <div style="margin-top: 30px; padding: 20px; border: 2px solid #25D366; border-radius: var(--radius-md); background: #f0fff4;">
+                <p style="font-weight: 700; color: #128C7E; margin-bottom: 10px;">
+                   <i class="fab fa-whatsapp"></i> Precisa de ajuda?
+                </p>
+                <p style="font-size: 0.95rem; margin-bottom: 15px;">Fale conosco diretamente pelo nosso WhatsApp de suporte:</p>
+                <a href="https://wa.me/5562981746036" target="_blank" style="font-weight: 800; font-size: 1.2rem; color: #128C7E; text-decoration: none;">
+                    +55 62 98174-6036
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -8,9 +8,7 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -33,432 +31,695 @@
     <noscript><img height="1" width="1" style="display:none"
             src="https://www.facebook.com/tr?id=1423261069542248&ev=PageView&noscript=1" /></noscript>
     <!-- End Meta Pixel Code -->
+
+    <!-- UTMify Pixel -->
+    <script>
+        window.pixelId = "69ac9ea2d2280f217e7b0247";
+        var a = document.createElement("script");
+        a.setAttribute("async", "");
+        a.setAttribute("defer", "");
+        a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+        document.head.appendChild(a);
+    </script>
+    <!-- End UTMify Pixel -->
 </head>
 
 <body>
 
-    <!-- HERO SECTION -->
-    <header class="hero-section">
-        <div class="container hero-content">
-            <div class="hero-text">
-                <div class="badge fade-in">✨ +1.000 Atividades Bíblicas</div>
-                <h1 class="headline fade-in delay-1">Transforme o Tempo de Telas em <span>Momentos com Deus</span> que
-                    Seu Filho Levará Para a Vida Toda</h1>
-                <p class="subhead fade-in delay-2">Ensine amor, gratidão, obediência e fé de forma leve, divertida e
-                    cheia de propósito.</p>
-                <a href="#oferta" class="cta-button pulse fade-in delay-3">👉 Quero Ajudar Meu Filho a Crescer com
-                    Deus</a>
-                <div class="trust-seals fade-in delay-4">
-                    <span><i class="fas fa-check-circle"></i> Acesso Imediato</span>
-                    <span><i class="fas fa-shield-alt"></i> Compra Segura</span>
-                </div>
-            </div>
-            <div class="hero-image-wrapper fade-in delay-2">
-                <img src="hero_image_1772143061001.png" alt="Pais lendo a Bíblia com o filho" class="hero-image">
-                <div class="floating-badge badge-1"><i class="fas fa-star"></i> Diversão em Família</div>
-                <div class="floating-badge badge-2"><i class="fas fa-book-bible"></i> Base Espiritual</div>
-            </div>
-        </div>
-        <div class="wave-bottom">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                preserveAspectRatio="none">
-                <path
-                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,110.1,192,85.54,236.4,68.83,279.79,64.24,321.39,56.44Z"
-                    class="shape-fill"></path>
-            </svg>
-        </div>
-    </header>
+    <!-- BARRA DE URGÊNCIA -->
+    <div class="urgency-bar">
+        <span class="hl-yellow">Desconto</span>
+        <span class="hl-white">somente</span>
+        <span class="hl-yellow">HOJE</span>
+        <span class="hl-white">nesta página</span>
+        <span class="hl-yellow" id="current-date"></span>
+    </div>
 
-    <!-- PROBLEMA SECTION -->
-    <section class="problem-section" id="problema">
-        <div class="container problem-content">
-            <!-- Ordem: Texto Primeiro, Depois Imagem para evitar colamento de fotos no mobile -->
-            <div class="problem-text slide-in-left">
-                <h2 class="section-title">Você também sente que o <span>celular está ocupando espaço demais</span> na
-                    vida do seu filho?</h2>
-                <div class="problem-points">
-                    <p>Vivemos em um mundo acelerado…</p>
-                    <p>Cheio de distrações…</p>
-                    <p>Cheio de estímulos que afastam nossas crianças daquilo que <strong>realmente importa</strong>.
-                    </p>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="container hero-content">
+            <div class="hero-text fade-in">
+                <!-- SVG Logo -->
+                <div class="hero-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 120" width="300" height="120">
+                        <defs>
+                            <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FFF8E7;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#FFF0D0;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="sunGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FFD55A;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#FFB020;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#A8E6FF;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#7DD4F8;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="grassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#5DD97A;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#3CB85A;stop-opacity:1" />
+                            </linearGradient>
+                            <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+                                <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#00000015" />
+                            </filter>
+                        </defs>
+
+                        <!-- Background pill -->
+                        <rect x="2" y="2" width="296" height="116" rx="24" ry="24" fill="url(#bgGrad)"
+                            filter="url(#softShadow)" />
+                        <rect x="2" y="2" width="296" height="116" rx="24" ry="24" fill="none" stroke="#FFD55A"
+                            stroke-width="2" stroke-opacity="0.5" />
+
+                        <!-- === ICON AREA (left side) === -->
+                        <!-- Sun rays -->
+                        <g transform="translate(52, 52)">
+                            <line x1="0" y1="-26" x2="0" y2="-20" stroke="#FFD55A" stroke-width="2.5"
+                                stroke-linecap="round" />
+                            <line x1="0" y1="20" x2="0" y2="26" stroke="#FFD55A" stroke-width="2.5"
+                                stroke-linecap="round" />
+                            <line x1="-26" y1="0" x2="-20" y2="0" stroke="#FFD55A" stroke-width="2.5"
+                                stroke-linecap="round" />
+                            <line x1="20" y1="0" x2="26" y2="0" stroke="#FFD55A" stroke-width="2.5"
+                                stroke-linecap="round" />
+                            <line x1="-18" y1="-18" x2="-14" y2="-14" stroke="#FFD55A" stroke-width="2.5"
+                                stroke-linecap="round" />
+                            <line x1="14" y1="14" x2="18" y2="18" stroke="#FFD55A" stroke-width="2.5"
+                                stroke-linecap="round" />
+                            <line x1="18" y1="-18" x2="14" y2="-14" stroke="#FFD55A" stroke-width="2.5"
+                                stroke-linecap="round" />
+                            <line x1="-14" y1="14" x2="-18" y2="18" stroke="#FFD55A" stroke-width="2.5"
+                                stroke-linecap="round" />
+                            <!-- Sun circle -->
+                            <circle cx="0" cy="0" r="13" fill="url(#sunGrad)" />
+                        </g>
+
+                        <!-- Cloud -->
+                        <g transform="translate(66, 30)">
+                            <ellipse cx="0" cy="0" rx="12" ry="8" fill="url(#cloudGrad)" />
+                            <ellipse cx="-8" cy="3" rx="8" ry="6" fill="url(#cloudGrad)" />
+                            <ellipse cx="8" cy="3" rx="8" ry="6" fill="url(#cloudGrad)" />
+                            <rect x="-14" y="3" width="28" height="6" fill="url(#cloudGrad)" />
+                        </g>
+
+                        <!-- Cross on hill -->
+                        <g transform="translate(38, 68)">
+                            <!-- Hill -->
+                            <ellipse cx="14" cy="10" rx="18" ry="10" fill="url(#grassGrad)" />
+                            <!-- Cross -->
+                            <rect x="11" y="-8" width="5" height="20" rx="2" fill="#F4A426" />
+                            <rect x="5" y="-3" width="17" height="5" rx="2" fill="#F4A426" />
+                        </g>
+
+                        <!-- Little stars/sparkles -->
+                        <text x="28" y="35" font-size="10" fill="#FFD55A" opacity="0.8">✦</text>
+                        <text x="78" y="78" font-size="8" fill="#5DD97A" opacity="0.7">✦</text>
+                        <text x="22" y="65" font-size="7" fill="#7DD4F8" opacity="0.8">✦</text>
+
+                        <!-- === TEXT AREA === -->
+                        <!-- "Crescendo" -->
+                        <text x="108" y="52" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="26"
+                            font-weight="800" fill="#2B7A3D" letter-spacing="-0.5">Crescendo</text>
+
+                        <!-- "com" -->
+                        <text x="108" y="75" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="16"
+                            font-weight="600" fill="#F4A426" letter-spacing="1">com</text>
+
+                        <!-- "Deus" -->
+                        <text x="138" y="75" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="26"
+                            font-weight="800" fill="#2B7A3D" letter-spacing="-0.5">Deus</text>
+
+                        <!-- Tagline -->
+                        <text x="108" y="95" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-size="9.5"
+                            font-weight="500" fill="#888" letter-spacing="1.5">ATIVIDADES BÍBLICAS INFANTIS</text>
+
+                        <!-- Decorative dots -->
+                        <circle cx="108" cy="104" r="2" fill="#FFD55A" opacity="0.6" />
+                        <circle cx="115" cy="104" r="2" fill="#5DD97A" opacity="0.6" />
+                        <circle cx="122" cy="104" r="2" fill="#7DD4F8" opacity="0.6" />
+                    </svg>
                 </div>
-                <div class="problem-question">
-                    <p>E no meio disso tudo, muitos pais se perguntam:</p>
+
+                <div class="hero-badge">✨ +1.000 Atividades Bíblicas</div>
+                <h1 class="hero-headline">Transforme o Tempo de Telas em <span>Momentos com Deus</span> que Seu Filho
+                    Levará Para a Vida Toda</h1>
+                <p class="hero-subhead">+1.000 Atividades Bíblicas Prontas para Imprimir — Ensine a Palavra de Deus de
+                    Forma Divertida, Sem Precisar Preparar Nada. Perfeito para usar em casa ou na escola dominical.</p>
+
+                <div class="hero-social-proof">
+                    <i class="fas fa-star"></i> Mais de 500 famílias e professoras já estão usando o kit
+                </div>
+
+                <a href="#oferta" class="cta-button">👉 Quero Ajudar Meu Filho a Crescer com Deus</a>
+
+                <div class="hero-trust-icons">
+                    <span><i class="fas fa-lock"></i> Compra Segura</span>
+                    <span><i class="fas fa-bolt"></i> Acesso Imediato</span>
+                    <span><i class="fas fa-check-circle"></i> Garantia</span>
+                </div>
+            </div>
+
+            <div class="hero-image-wrapper fade-in delay-2">
+                <img src="hero_image_1772143061001.png" alt="Crescendo com Deus" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- BARRA DE NÚMEROS -->
+    <section class="numbers-bar">
+        <div class="container numbers-grid">
+            <div class="number-block">
+                <span class="num">500+</span>
+                <span class="label">👨‍👩‍👧 Famílias Satisfeitas</span>
+            </div>
+            <div class="number-block">
+                <span class="num">1.000+</span>
+                <span class="label">📚 Atividades Prontas</span>
+            </div>
+            <div class="number-block">
+                <span class="num">4.9/5</span>
+                <span class="label">⭐ Avaliação Média</span>
+            </div>
+            <div class="number-block">
+                <span class="num">100%</span>
+                <span class="label">⚡ Digital e Imediato</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARA QUEM É -->
+    <section class="section-padding bg-light">
+        <div class="container text-center">
+            <h2 class="section-title">Esse kit foi feito para você que é...</h2>
+
+            <div class="for-who-grid">
+                <div class="card for-who-card scale-up">
+                    <div class="icon-circle green mx-auto"><i class="fas fa-user-nurse"></i></div>
+                    <h3>Mãe cristã</h3>
+                    <p>Que quer substituir o tempo de telas por atividades com propósito e base bíblica.</p>
+                </div>
+                <div class="card for-who-card scale-up delay-1">
+                    <div class="icon-circle yellow mx-auto"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h3>Professora de escola dominical</h3>
+                    <p>Que precisa de material pronto para as aulas toda semana, sem gastar horas preparando.</p>
+                </div>
+                <div class="card for-who-card scale-up delay-2">
+                    <div class="icon-circle blue mx-auto"><i class="fas fa-users"></i></div>
+                    <h3>Líder de ministério infantil</h3>
+                    <p>Que quer engajar as crianças com conteúdo bíblico de qualidade e atividades criativas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROBLEMA -->
+    <section class="section-padding bg-light" id="problema" style="background-color: #FAFAF7;">
+        <div class="container problem-content">
+            <div class="problem-text slide-in-left">
+                <h2 class="section-title" style="font-size: 2.2rem;">Você também sente que o <span
+                        style="color: var(--primary);">celular está ocupando espaço demais</span> na vida do seu filho?
+                </h2>
+
+                <p style="margin-bottom: 15px; font-size: 1.1rem;">Vivemos em um mundo acelerado…</p>
+                <p style="margin-bottom: 15px; font-size: 1.1rem;">Cheio de distrações…</p>
+                <p style="margin-bottom: 15px; font-size: 1.1rem;">Cheio de estímulos que afastam nossas crianças
+                    daquilo que <strong>realmente importa</strong>.</p>
+
+                <p
+                    style="margin-top: 25px; font-weight: 600; color: var(--text-main); font-size: 1.1rem; padding-left: 15px; border-left: 3px solid #E5E7EB;">
+                    E para quem lidera uma turma na escola dominical, o desafio é ainda maior: preparar um material novo
+                    toda semana, que seja bíblico, divertido e que realmente prenda a atenção das crianças. Isso toma
+                    tempo que muitas vezes você não tem.
+                </p>
+
+                <div class="problem-quote">
+                    <p style="color: var(--text-muted); margin-bottom: 10px; font-weight: 600;">E no meio disso tudo,
+                        muitos pais se perguntam:</p>
                     <blockquote>"Como posso ensinar valores cristãos de forma natural?"</blockquote>
                 </div>
             </div>
             <div class="problem-image-wrapper slide-in-right">
-                <img src="problem_screen_1772143112418.png" alt="Criança triste no celular" class="problem-image">
+                <img src="problem_screen_1772143112418.png" alt="Criança no celular" class="problem-image">
             </div>
         </div>
     </section>
 
-    <!-- SOLUÇÃO SECTION -->
-    <section class="solution-section">
-        <div class="wave-top-solution">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                preserveAspectRatio="none">
-                <path
-                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,110.1,192,85.54,236.4,68.83,279.79,64.24,321.39,56.44Z"
-                    class="shape-fill"></path>
-            </svg>
-        </div>
+    <!-- SOLUÇÃO -->
+    <section class="section-padding bg-white">
         <div class="container solution-content">
-            <div class="solution-text">
-                <h2 class="section-title">Foi pensando nisso que criamos o <br><span>Crescendo Com Deus</span></h2>
-                <p class="solution-desc">Mais de 1.000 atividades bíblicas ilustradas para ajudar seu filho a:</p>
+            <div class="problem-text slide-in-left">
+                <h2 class="section-title">Foi pensando nisso que criamos o <br><span
+                        style="color: var(--primary);">Crescendo Com Deus</span></h2>
+                <p style="font-size: 1.15rem; font-weight: 600; color: var(--text-muted);">Mais de 1.000 atividades
+                    bíblicas ilustradas para ajudar seu filho a:</p>
 
                 <ul class="solution-list">
-                    <li><i class="fas fa-check"></i> Conhecer a Palavra desde cedo</li>
-                    <li><i class="fas fa-check"></i> Criar intimidade com Deus</li>
-                    <li><i class="fas fa-check"></i> Desenvolver valores cristãos fortes</li>
-                    <li><i class="fas fa-check"></i> Aprender brincando</li>
-                    <li><i class="fas fa-check"></i> Reduzir o excesso de telas</li>
+                    <li>
+                        <div class="check-custom"><i class="fas fa-check"></i></div> Conhecer a Palavra desde cedo
+                    </li>
+                    <li>
+                        <div class="check-custom"><i class="fas fa-check"></i></div> Criar intimidade com Deus
+                    </li>
+                    <li>
+                        <div class="check-custom"><i class="fas fa-check"></i></div> Desenvolver valores cristãos fortes
+                    </li>
+                    <li>
+                        <div class="check-custom"><i class="fas fa-check"></i></div> Aprender brincando
+                    </li>
+                    <li>
+                        <div class="check-custom"><i class="fas fa-check"></i></div> Reduzir o excesso de telas
+                    </li>
                 </ul>
             </div>
-            <div class="solution-image-wrapper">
-                <img src="product_mockup_1772143139421.png" alt="Mockup Crescendo Com Deus"
-                    class="mockup-image scale-up">
-            </div>
-        </div>
-        <div class="wave-bottom-solution">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                preserveAspectRatio="none">
-                <path
-                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V95.8C59.71,118.08,130.83,110.1,192,85.54,236.4,68.83,279.79,64.24,321.39,56.44Z"
-                    class="shape-fill"></path>
-            </svg>
-        </div>
-    </section>
-
-    <!-- BENEFICIOS SECTION -->
-    <section class="benefits-section">
-        <div class="container">
-            <h2 class="section-title text-center">Seu filho vai...</h2>
-
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="icon-wrapper"><i class="fas fa-book-open"></i></div>
-                    <h3>Aprender de Forma Divertida</h3>
-                    <p>Histórias bíblicas que cativam a atenção e ensinam através da ludicidade.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="icon-wrapper"><i class="fas fa-praying-hands"></i></div>
-                    <h3>Entender a Oração</h3>
-                    <p>Descobrir o significado de falar com Deus de forma natural e amorosa.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="icon-wrapper"><i class="fas fa-hands-holding-child"></i></div>
-                    <h3>Desenvolver Valores</h3>
-                    <p>Cultivar empatia, gratidão e respeito através dos ensinamentos de Jesus.</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="icon-wrapper"><i class="fas fa-users"></i></div>
-                    <h3>Criar Memórias Especiais</h3>
-                    <p>Momentos de qualidade em família que ficarão marcados para sempre.</p>
-                </div>
-            </div>
-
-            <div class="benefits-conclusion">
-                <p>Porque não é só sobre atividades…</p>
-                <p class="highlight">É sobre base espiritual.</p>
+            <div class="problem-image-wrapper slide-in-right">
+                <img src="mockup_completo.jpg" alt="Mockup Crescendo Com Deus" class="problem-image hover-highlight"
+                    style="border-radius: 0; box-shadow: none; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));">
             </div>
         </div>
     </section>
 
-    <!-- ENTREGÁVEIS SECTION -->
-    <section class="what-you-get-section">
-        <div class="container">
-            <h2 class="section-title text-center">O Que Você Recebe Hoje</h2>
-            <div class="features-grid">
-                <div class="feature-item">
-                    <div class="feature-icon">📘</div>
-                    <h4>Alfabeto Bíblico Infantil</h4>
+
+
+    <!-- O QUE VOCÊ RECEBE -->
+    <section class="section-padding bg-white">
+        <div class="container text-center">
+            <h2 class="section-title">O Que Você Recebe Hoje</h2>
+
+            <div class="receives-grid">
+                <div class="card receive-card fade-in">
+                    <div class="icon-circle blue"><i class="fas fa-font"></i></div>
+                    <h3>Alfabeto Bíblico Infantil Completo</h3>
+                    <p>Aprenda as letras com personagens e histórias da Bíblia de forma visual.</p>
                 </div>
-                <div class="feature-item">
-                    <div class="feature-icon">📖</div>
-                    <h4>Aventuras do Antigo Testamento</h4>
+                <div class="card receive-card fade-in delay-1">
+                    <div class="icon-circle green"><i class="fas fa-palette"></i></div>
+                    <h3>+1000 Atividades Bíblicas Ilustradas</h3>
+                    <p>Desenhos para colorir prontos para imprimir e colorir com propósito.</p>
                 </div>
-                <div class="feature-item">
-                    <div class="feature-icon">✝️</div>
-                    <h4>Histórias de Jesus Ilustradas</h4>
+                <div class="card receive-card fade-in">
+                    <div class="icon-circle orange"><i class="fas fa-cut"></i></div>
+                    <h3>Recorte, Colagem e Escrita</h3>
+                    <p>Estimula a coordenação motora com maravilhosos temas cristãos e divertidos.</p>
                 </div>
-                <div class="feature-item">
-                    <div class="feature-icon">🙏</div>
-                    <h4>Manual Aprendendo a Orar</h4>
+                <div class="card receive-card fade-in delay-1">
+                    <div class="icon-circle yellow"><i class="fas fa-book-bible"></i></div>
+                    <h3>Histórias e Testamentos</h3>
+                    <p>O Antigo e Novo Testamento ilustrados e explicados em linguagem infantil.</p>
                 </div>
-                <div class="feature-item">
-                    <div class="feature-icon">🎨</div>
-                    <h4>Atividades para Colorir com Propósito</h4>
+                <div class="card receive-card fade-in">
+                    <div class="icon-circle blue"><i class="fas fa-hands-praying"></i></div>
+                    <h3>Manual para Ensinar a Orar</h3>
+                    <p>Guia prático para criar o hábito de falar com o Pai celestial desde cedo.</p>
                 </div>
-                <div class="feature-item">
-                    <div class="feature-icon">📚</div>
-                    <h4>Exercícios Práticos (Casa, Igreja, Escola)</h4>
+                <div class="card receive-card fade-in delay-1">
+                    <div class="icon-circle green"><i class="fas fa-puzzle-piece"></i></div>
+                    <h3>Jogos e Passatempos Bíblicos</h3>
+                    <p>Cruzadinhas e caça-palavras para fixar o aprendizado brincando online ou offline.</p>
                 </div>
             </div>
-            <div class="text-center mt-30">
-                <a href="#oferta" class="cta-button pulse">👉 Quero Ajudar Meu Filho a Crescer com Deus</a>
-            </div>
-        </div>
-    </section>
 
-    <!-- COMO FUNCIONA SECTION -->
-    <section class="how-it-works-section">
-
-        <div class="container">
-            <h2 class="section-title text-center">Como Funciona?</h2>
-            <div class="steps-container">
-                <div class="step-card">
-                    <div class="step-number">1</div>
-                    <i class="fas fa-shopping-cart step-icon"></i>
-                    <h4>Você Compra</h4>
-                    <p>Pagamento 100% seguro.</p>
-                </div>
-                <div class="step-connector"><i class="fas fa-chevron-right"></i></div>
-                <div class="step-card">
-                    <div class="step-number">2</div>
-                    <i class="fas fa-envelope step-icon"></i>
-                    <h4>Recebe por E-mail</h4>
-                    <p>Acesso imediato ao material.</p>
-                </div>
-                <div class="step-connector"><i class="fas fa-chevron-right"></i></div>
-                <div class="step-card">
-                    <div class="step-number">3</div>
-                    <i class="fas fa-print step-icon"></i>
-                    <h4>Você Imprime</h4>
-                    <p>Imprima no seu tempo.</p>
-                </div>
-                <div class="step-connector"><i class="fas fa-chevron-right"></i></div>
-                <div class="step-card">
-                    <div class="step-number">4</div>
-                    <i class="fas fa-child step-icon"></i>
-                    <h4>Faz com a Criança</h4>
-                    <p>Momentos inesquecíveis.</p>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- DEPOIMENTOS SECTION -->
-    <section class="testimonials-section">
-        <div class="container">
-            <h2 class="section-title text-center">O que os pais e professores estão dizendo</h2>
-            <div class="testimonials-grid">
-                <!-- Depoimento 1 (Pai/Mãe) -->
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Foi a melhor substituição que fiz aqui em casa! Meu filho de 5 anos
-                        amou as histórias ilustradas. Hoje ele mesmo me pede para pintar e ler antes de dormir,
-                        esquecendo o celular completamente."</p>
-                    <div class="testimonial-author">
-                        <img src="tia_carol.png" alt="Mariana S." class="author-avatar">
-                        <div>
-                            <h4>Mariana S.</h4>
-                            <span>Mãe do Lucas</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Depoimento 2 (Pai/Mãe) -->
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Estamos tendo momentos preciosos em família. O alfabeto bíblico ajudou
-                        demais na alfabetização do meu caçula, tudo com princípios cristãos. Recomendo de olhos
-                        fechados!"</p>
-                    <div class="testimonial-author">
-                        <img src="rafael_ana.jpg" alt="Rafael e Ana" class="author-avatar">
-                        <div>
-                            <h4>Rafael e Ana</h4>
-                            <span>Pais do Pedro e Sofia</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Depoimento 3 (Professora) -->
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Uso o material na Escola Bíblica Infantil e as crianças ficam
-                        encantadas! As atividades prendem a atenção e o conteúdo é biblicamente muito fiel. Perfeito
-                        para ensinar valores de forma didática."</p>
-                    <div class="testimonial-author">
-                        <img src="mariana.jpg" alt="Tia Carol" class="author-avatar">
-                        <div>
-                            <h4>Tia Carol</h4>
-                            <span>Professora Infantil</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-30">
-                <a href="#oferta" class="cta-button pulse">👉 Quero Ajudar Meu Filho a Crescer com Deus</a>
+            <div class="mt-30">
+                <a href="#oferta" class="cta-button">👉 Quero Ajudar Meu Filho a Crescer com Deus</a>
             </div>
         </div>
     </section>
 
-    <!-- OFERTA E GARANTIA SECTION -->
-    <section class="offer-section" id="oferta">
-        <div class="container offer-container">
-            <div class="authority-badge text-center">
-                <p><i class="fas fa-certificate"></i> Criado com apoio de educadores cristãos | <i
-                        class="fas fa-university"></i> Material usado em escolas bíblicas</p>
-            </div>
+    <!-- COMO FUNCIONA -->
+    <section class="section-padding bg-light">
+        <div class="container text-center">
+            <h2 class="section-title">Como Funciona?</h2>
 
-            <div class="offer-box">
-                <div class="offer-whats-inside">
-                    <h3>O QUE VOCÊ RECEBE HOJE</h3>
-                    <ul class="offer-list">
-                        <li><i class="fas fa-check-circle"></i> +1000 atividades bíblicas ilustradas</li>
-                        <li><i class="fas fa-check-circle"></i> Histórias completas do Antigo e Novo Testamento</li>
-                        <li><i class="fas fa-check-circle"></i> Alfabeto Bíblico Infantil</li>
-                        <li><i class="fas fa-check-circle"></i> Manual para ensinar seu filho a orar</li>
-                        <li><i class="fas fa-check-circle"></i> Atividades para imprimir e aplicar imediatamente</li>
+            <div class="timeline-container">
+                <div class="timeline-step fade-in">
+                    <div class="timeline-number">1</div>
+                    <h4 style="color: var(--primary);">Garante o kit</h4>
+                    <p>Pagamento 100% seguro, e envio do acesso em menos de 2 minutos.</p>
+                </div>
+                <div class="timeline-step fade-in delay-1">
+                    <div class="timeline-number">2</div>
+                    <h4 style="color: var(--primary);">Escolhe do dia</h4>
+                    <p>Mais de 1.000 opções de atividades por tema e faixa etária.</p>
+                </div>
+                <div class="timeline-step fade-in delay-2">
+                    <div class="timeline-number">3</div>
+                    <h4 style="color: var(--primary);">Imprime em casa</h4>
+                    <p>Sem complicação! Qualquer impressora comum que você tenha, serve.</p>
+                </div>
+                <div class="timeline-step fade-in delay-3">
+                    <div class="timeline-number">4</div>
+                    <h4 style="color: var(--primary);">Aprende sorrindo</h4>
+                    <p>Seu filho em momentos inesquecíveis que ficam na memória para sempre.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ANTES E DEPOIS -->
+    <section class="section-padding bg-white">
+        <div class="container text-center">
+            <h2 class="section-title">A mudança que você e seus alunos precisam</h2>
+
+            <div class="comparison-grid">
+                <div class="comp-card comp-before fade-in">
+                    <h3><i class="fas fa-times-circle"></i> Antes do Kit</h3>
+                    <ul class="comp-list">
+                        <li><i class="fas fa-times"></i> Criança entediada no celular</li>
+                        <li><i class="fas fa-times"></i> Professora sem material novo para a aula</li>
+                        <li><i class="fas fa-times"></i> Horas garimpando na internet sem sucesso</li>
+                        <li><i class="fas fa-times"></i> Conteúdo fútil ou sem base bíblica segura</li>
                     </ul>
-
-                    <div class="bonus-highlight">
-                        <h3>🎁 BÔNUS EXCLUSIVOS DE HOJE</h3>
-                        <p class="bonus-subheader">Ao garantir agora você também recebe:</p>
-                        <div class="bonus-items">
-                            <div class="bonus-item">
-                                <img src="bonus_wordsearch.png" alt="Caça-palavras Bíblicos" class="bonus-icon-img">
-                                <div class="bonus-item-text">
-                                    <p>Caça-palavras bíblicos para desenvolver concentração</p>
-                                    <span class="bonus-price-before">R$ 17,90</span>
-                                    <span class="bonus-price-after">R$ 0,00 INCLUSO NO KIT</span>
-                                </div>
-                            </div>
-                            <div class="bonus-item">
-                                <img src="bonus_crosswords.png" alt="Cruzadinhas Cristãs" class="bonus-icon-img">
-                                <div class="bonus-item-text">
-                                    <p>Cruzadinhas cristãs educativas</p>
-                                    <span class="bonus-price-before">R$ 17,90</span>
-                                    <span class="bonus-price-after">R$ 0,00 INCLUSO NO KIT</span>
-                                </div>
-                            </div>
-                            <div class="bonus-item">
-                                <img src="bonus_family_activities.png" alt="Atividades em Família"
-                                    class="bonus-icon-img">
-                                <div class="bonus-item-text">
-                                    <p>Atividades especiais para momentos em família</p>
-                                    <span class="bonus-price-before">R$ 27,90</span>
-                                    <span class="bonus-price-after">R$ 0,00 INCLUSO NO KIT</span>
-                                </div>
-                            </div>
-                            <div class="bonus-item">
-                                <img src="bonus_bobbie_goods.png" alt="Bobbie Goods Cristãos" class="bonus-icon-img">
-                                <div class="bonus-item-text">
-                                    <p>100+ Bobbie Goods Cristãos para Colorir</p>
-                                    <span class="bonus-price-before">R$ 22,90</span>
-                                    <span class="bonus-price-after">R$ 0,00 INCLUSO NO KIT</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-
-                <div class="price-section">
-                    <p class="conscience-phrase">"Prepare seu filho hoje para manter a fé mesmo quando crescer."</p>
-                    <div class="price-anchoring">
-                        <span class="old-price">De R$ 67,00</span>
-                        <span class="for-only">Por apenas</span>
-                    </div>
-                    <div class="price">R$ 19,90</div>
-
-                    <a href="https://checkout.crescendocomdeus.site/VCCL1O8SCUB8" class="cta-button giant pulse">👉 Quero Ajudar Meu
-                        Filho a Crescer com Deus</a>
-                    <p class="secure-text"><i class="fas fa-lock"></i> Compra 100% Segura e Criptografada</p>
-
-                    <div class="guarantee-box">
-                        <img src="selo_garantia2.png" alt="Selo de Garantia Incondicional" class="guarantee-icon">
-                        <div class="guarantee-text">
-                            <h4>Garantia Incondicional de 7 Dias</h4>
-                            <p>Se você e seu filho não amarem as atividades, devolvemos 100% do seu dinheiro. Sem
-                                perguntas.
-                            </p>
-                        </div>
-                    </div>
+                <div class="comp-card comp-after fade-in delay-1">
+                    <h3><i class="fas fa-check-circle"></i> Depois do Kit</h3>
+                    <ul class="comp-list">
+                        <li><i class="fas fa-check"></i> Criança animada e focada na Palavra</li>
+                        <li><i class="fas fa-check"></i> Aula incrível preparada em 2 minutos</li>
+                        <li><i class="fas fa-check"></i> Tudo lindo e organizado em um só lugar</li>
+                        <li><i class="fas fa-check"></i> Conteúdo 100% bíblico e fundamentado</li>
+                    </ul>
                 </div>
             </div>
+        </div>
     </section>
 
-    <!-- FAQ SECTION -->
-    <section class="faq-section">
+    <!-- DEPOIMENTOS (WHATSAPP) -->
+    <section class="section-padding bg-light">
+        <div class="container text-center">
+            <h2 class="section-title">O Que Dizem Mães e Professoras</h2>
+            <p class="section-subtitle">Histórias reais de transformação no ministério infantil e nos lares cristãos</p>
+
+            <div class="whatsapp-grid" style="overflow-x: hidden; padding-bottom: 20px;">
+                <!-- Chat 1 -->
+                <div class="fade-in" style="display: flex; justify-content: center;">
+                    <img src="depoimento_carol.png" alt="Depoimento Carol" class="hover-highlight"
+                        style="width: 100%; max-width: 320px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
+                </div>
+
+                <!-- Chat 2 -->
+                <div class="fade-in delay-1" style="display: flex; justify-content: center;">
+                    <img src="depoimento_mariana.png" alt="Depoimento Mariana" class="hover-highlight"
+                        style="width: 100%; max-width: 320px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
+                </div>
+
+                <!-- Chat 3 -->
+                <div class="fade-in delay-2" style="display: flex; justify-content: center;">
+                    <img src="depoimento_jessica.png" alt="Depoimento Jéssica" class="hover-highlight"
+                        style="width: 100%; max-width: 320px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- É PARA VOCÊ / NÃO É -->
+    <section class="section-padding bg-white">
+        <div class="container text-center">
+            <h2 class="section-title">Este Kit É Para Você?</h2>
+
+            <div class="qualification-grid">
+                <div class="card qual-card qual-yes scale-up">
+                    <h3><i class="fas fa-check-circle"></i> É Para Você Se:</h3>
+                    <ul class="qual-list text-left">
+                        <li><i class="fas fa-check"></i> Trabalha no ministério infantil e precisa de material pronto
+                            toda semana</li>
+                        <li><i class="fas fa-check"></i> Quer ensinar a Bíblia de forma divertida e eficaz</li>
+                        <li><i class="fas fa-check"></i> Não tem tempo para criar atividades do zero</li>
+                        <li><i class="fas fa-check"></i> Quer aproximar as crianças da Palavra com criatividade</li>
+                        <li><i class="fas fa-check"></i> Busca material 100% bíblico, ilustrado e pronto para usar</li>
+                    </ul>
+                </div>
+                <div class="card qual-card qual-no scale-up delay-1">
+                    <h3><i class="fas fa-times-circle"></i> Não É Para Você Se:</h3>
+                    <ul class="qual-list text-left">
+                        <li><i class="fas fa-times"></i> Não se importa com o crescimento espiritual das crianças</li>
+                        <li><i class="fas fa-times"></i> Prefere deixar as crianças em frente às telas sem supervisão
+                        </li>
+                        <li><i class="fas fa-times"></i> Não valoriza ensino bíblico de qualidade</li>
+                        <li><i class="fas fa-times"></i> Espera resultados sem dedicar tempo com as crianças</li>
+                        <li><i class="fas fa-times"></i> Busca material secular sem fundamento bíblico</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFÍCIOS QUE TRANSFORMAM -->
+    <section class="section-padding bg-light">
+        <div class="container text-center">
+            <h2 class="section-title">Benefícios que Transformam</h2>
+
+            <div class="transf-grid">
+                <div class="card transf-card fade-in">
+                    <h4><i class="fas fa-heart"></i> Conexão Familiar</h4>
+                    <p>Momentos de qualidade em família aprendendo sobre a fé juntos.</p>
+                </div>
+                <div class="card transf-card fade-in delay-1">
+                    <h4><i class="fas fa-bible"></i> Aprendizado Efetivo</h4>
+                    <p>Crianças retêm melhor através de atividades práticas.</p>
+                </div>
+                <div class="card transf-card fade-in delay-2">
+                    <h4><i class="fas fa-clock"></i> Economize Tempo</h4>
+                    <p>Pare de garimpar na internet. Tudo pronto em um só lugar.</p>
+                </div>
+                <div class="card transf-card fade-in">
+                    <h4><i class="fas fa-users"></i> Perfeito Para Grupos</h4>
+                    <p>Ideal para escola dominical com qualquer tamanho de turma.</p>
+                </div>
+                <div class="card transf-card fade-in delay-1">
+                    <h4><i class="fas fa-magic"></i> Criatividade</h4>
+                    <p>Atividades coloridas que mantêm as crianças engajadas.</p>
+                </div>
+                <div class="card transf-card fade-in delay-2">
+                    <h4><i class="fas fa-shield-alt"></i> Material Confiável</h4>
+                    <p>Biblicamente fundamentado com apoio de educadores cristãos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BÔNUS EXCLUSIVOS -->
+    <section class="bonus-section">
+        <div class="container text-center">
+            <div class="bonus-badge">🎁 Bônus Exclusivos Inclusos</div>
+            <h2 class="section-title" style="font-size: 3rem;">Receba Mais Gratuitamente</h2>
+            <div class="bonus-val">Valor total dos bônus: <s>R$ 127,00</s> — <span class="free">GRÁTIS</span></div>
+
+            <div class="bonus-grid text-left">
+                <!-- Bônus 1 -->
+                <div class="bonus-card slide-up">
+                    <div class="b-number">01</div>
+                    <div class="b-img-placeholder"><img src="bonus_dinamicas_50.png" alt="50 Dinâmicas Bíblicas"></div>
+                    <h3 class="b-title">50 Dinâmicas Bíblicas para Crianças</h3>
+                    <p class="b-desc">"50 brincadeiras prontas para animar sua aula ou momento em família — é só
+                        imprimir e aplicar"</p>
+                    <div class="b-price"><s>R$ 27,90</s> <span class="gratis">Hoje: Grátis</span></div>
+                    <a href="#oferta" class="upsell-line">👉 Quer as 200 dinâmicas completas? Adicione por apenas R$
+                        12,90 no próximo passo</a>
+                </div>
+
+                <!-- Bônus 2 -->
+                <div class="bonus-card slide-up delay-1">
+                    <div class="b-number">02</div>
+                    <div class="b-img-placeholder"><img src="bonus_versiculos_52.png" alt="52 Versículos"></div>
+                    <h3 class="b-title">52 Versículos para Memorizar</h3>
+                    <p class="b-desc">"Um versículo por semana o ano todo para aprender a Palavra de coração."</p>
+                    <div class="b-price"><s>R$ 17,90</s> <span class="gratis">Hoje: Grátis</span></div>
+                    <a href="#oferta" class="upsell-line">👉 Quer os 365 versículos completos — um por dia o ano todo?
+                        Adicione por
+                        apenas R$ 12,90 no próximo passo</a>
+                </div>
+
+                <!-- Bônus 3 -->
+                <div class="bonus-card slide-up delay-2">
+                    <div class="b-number">03</div>
+                    <div class="b-img-placeholder"><img src="bonus_wordsearch.png" alt="Caça-palavras"></div>
+                    <h3 class="b-title">Caça-palavras Bíblicos</h3>
+                    <p class="b-desc">"Passatempos que desenvolvem concentração enquanto a criança aprende histórias da
+                        Bíblia"</p>
+                    <div class="b-price"><s>R$ 17,90</s> <span class="gratis">Hoje: Grátis</span></div>
+                </div>
+
+                <!-- Bônus 4 -->
+                <div class="bonus-card slide-up">
+                    <div class="b-number">04</div>
+                    <div class="b-img-placeholder"><img src="bonus_crosswords.png" alt="Cruzadinhas"></div>
+                    <h3 class="b-title">Cruzadinhas Educativas</h3>
+                    <p class="b-desc">"Atividades de fixação que reforçam o aprendizado bíblico desafiadora e divertida"
+                    </p>
+                    <div class="b-price"><s>R$ 17,90</s> <span class="gratis">Hoje: Grátis</span></div>
+                </div>
+
+                <!-- Bônus 5 -->
+                <div class="bonus-card slide-up delay-1">
+                    <div class="b-number">05</div>
+                    <div class="b-img-placeholder"><img src="bonus_family_activities.png" alt="Atividades Ativas"></div>
+                    <h3 class="b-title">Atividades em Família</h3>
+                    <p class="b-desc">"Dinâmicas pensadas para pais e filhos fazerem juntos — fortalece o vínculo e a
+                        fé"</p>
+                    <div class="b-price"><s>R$ 27,90</s> <span class="gratis">Hoje: Grátis</span></div>
+                </div>
+
+                <!-- Bônus 6 -->
+                <div class="bonus-card slide-up delay-2">
+                    <div class="b-number">06</div>
+                    <div class="b-img-placeholder"><img src="bonus_bobbie_goods.png" alt="Colorir Cristão"></div>
+                    <h3 class="b-title">100+ Desenhos para Colorir</h3>
+                    <p class="b-desc">"Ilustrações lindas com temas bíblicos para colorir — horas de propósito."</p>
+                    <div class="b-price"><s>R$ 22,90</s> <span class="gratis">Hoje: Grátis</span></div>
+                </div>
+            </div>
+
+            <div class="all-bonus-img fade-in">
+                <img src="mockup_completo.jpg" alt="Mockup Leque de todos os Bônus" class="hover-highlight"
+                    style="max-width: 100%; border-radius: 12px; filter: drop-shadow(0 15px 25px rgba(0,0,0,0.15));">
+            </div>
+        </div>
+    </section>
+
+    <!-- OFERTA E PREÇO -->
+    <section class="offer-section" id="oferta">
+        <div class="container">
+            <h2 class="section-title text-center">Garanta Agora Com Desconto</h2>
+            <div class="offer-box">
+                <div class="offer-badge">⭐ Oferta Mais Completa</div>
+
+                <div class="offer-img-placeholder" style="background: none; border: none;">
+                    <img src="mockup_completo.jpg" alt="Mockup Kit Completo" class="hover-highlight"
+                        style="max-width: 100%; border-radius: 12px; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.15));">
+                </div>
+
+                <ul class="offer-includes">
+                    <li><i class="fas fa-check-circle"></i> +1000 atividades bíblicas ilustradas</li>
+                    <li><i class="fas fa-check-circle"></i> Jogos e passatempos bíblicos</li>
+                    <li><i class="fas fa-check-circle"></i> Todos os 6 Bônus Exclusivos Premium</li>
+                    <li><i class="fas fa-check-circle"></i> Acesso Imediato Vitalício (+ Atualizações)</li>
+                </ul>
+
+                <div class="timer-box">
+                    <div style="text-align: center;">
+                        <span id="minutes">15</span>
+                        <span class="timer-label">MIN</span>
+                    </div>
+                    <span class="colon">:</span>
+                    <div style="text-align: center;">
+                        <span id="seconds">00</span>
+                        <span class="timer-label">SEG</span>
+                    </div>
+                </div>
+
+                <div class="price-box">
+                    <span class="price-old">De R$ 197,00</span>
+                    <span class="discount-badge">Economize 90%</span>
+                    <span class="price-label">Por apenas:</span>
+                    <div class="price-big">R$ 19,90</div>
+                </div>
+
+                <a href="https://checkout.crescendocomdeus.site/VCCL1O8SCUB8" class="cta-button giant text-center">⬇️
+                    Quero Garantir Meu Acesso Agora</a>
+
+                <div style="margin-top: 15px; font-weight: 600; color: var(--text-light); font-size: 0.9rem;">
+                    🔒 Compra 100% Segura · ⚡ Acesso Imediato · ✅ Garantia de 30 Dias
+                </div>
+
+                <div class="guarantee-box">
+                    <img src="selo_garantia2.png" alt="Selo de 30 Dias">
+                    <p>Se você por qualquer motivo não amar o material em 30 dias, nós devolvemos 100% do seu dinheiro,
+                        sem dor de cabeça.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section-padding bg-white">
         <div class="container">
             <h2 class="section-title text-center">Perguntas Frequentes</h2>
-            <div class="faq-container">
+            <div style="max-width: 800px; margin: 0 auto; margin-top: 40px;">
                 <div class="faq-item">
-                    <div class="faq-question">
-                        <h4>Para qual idade o Kit é recomendado?</h4>
-                        <i class="fas fa-plus"></i>
+                    <div class="faq-question">Para qual idade o Kit é recomendado? <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>O Kit foi desenvolvido com muito carinho para crianças de 3 a 10 anos. As atividades variam
-                            em dificuldade, desde colorir e conhecer as histórias para os menores, até alfabetização e
-                            interpretação para os maiores.</p>
+                        <p style="margin-top: 10px;">O Kit foi desenvolvido com muito carinho para crianças de 3 a 10
+                            anos. As atividades variam em dificuldade, desde colorir e conhecer as histórias para os
+                            menores, até alfabetização e interpretação para os maiores.</p>
                     </div>
                 </div>
-
                 <div class="faq-item">
-                    <div class="faq-question">
-                        <h4>Como vou receber o material?</h4>
-                        <i class="fas fa-plus"></i>
-                    </div>
+                    <div class="faq-question">Como vou receber o material? <i class="fas fa-chevron-down"></i></div>
                     <div class="faq-answer">
-                        <p>Imediatamente após a confirmação do pagamento, você receberá um e-mail com todas as
-                            instruções e o link de acesso exclusivo para baixar todo o material (PDFs) no seu celular ou
-                            computador.</p>
+                        <p style="margin-top: 10px;">Imediatamente após a confirmação do pagamento, você receberá um
+                            e-mail com todas as instruções e o link de acesso exclusivo para baixar todo o material
+                            (PDFs) no seu celular ou computador.</p>
                     </div>
                 </div>
-
                 <div class="faq-item">
-                    <div class="faq-question">
-                        <h4>Preciso imprimir tudo de uma vez?</h4>
-                        <i class="fas fa-plus"></i>
+                    <div class="faq-question">Preciso imprimir tudo de uma vez? <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Não! Como o material é 100% digital, você pode baixar tudo e imprimir apenas as atividades
-                            que for fazer no dia com o seu filho. Imprima quantas vezes quiser.</p>
+                        <p style="margin-top: 10px;">Não! Como o material é 100% digital, você pode baixar tudo e
+                            imprimir apenas as atividades que for fazer no dia com o seu filho. Imprima quantas vezes
+                            quiser.</p>
                     </div>
                 </div>
-
                 <div class="faq-item">
-                    <div class="faq-question">
-                        <h4>E se eu não gostar do conteúdo?</h4>
-                        <i class="fas fa-plus"></i>
-                    </div>
+                    <div class="faq-question">E se eu não gostar do conteúdo? <i class="fas fa-chevron-down"></i></div>
                     <div class="faq-answer">
-                        <p>Você tem Risco Zero. Oferecemos uma garantia incondicional de 7 dias. Se por qualquer motivo
-                            achar que o material não atendeu suas expectativas, basta nos enviar um e-mail que
-                            devolveremos 100% do valor, sem nenhuma burocracia.</p>
+                        <p style="margin-top: 10px;">Você tem Risco Zero. Oferecemos uma garantia incondicional de 30
+                            dias. Se por qualquer motivo achar que o material não atendeu suas expectativas, basta nos
+                            enviar um e-mail que devolveremos 100% do valor, sem nenhuma burocracia.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">O material é gratuito? Por que custa R$ 19,90? <i
+                            class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">
+                        <p style="margin-top: 10px;">Cobramos um valor simbólico de apenas R$ 19,90 para manter os
+                            custos do site, da equipe de design que cria as ilustrações e do suporte. É um investimento
+                            ínfimo para ter acesso vitalício a mais de 1.000 atividades prontas.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Funciona para crianças que ainda não leem? <i
+                            class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">
+                        <p style="margin-top: 10px;">Sim! Muitas atividades são focadas em desenhos, cores e formas,
+                            perfeitas para crianças a partir de 3 anos que estão começando a ter contato com a Bíblia
+                            através do visual e da ludicidade.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Posso usar com minha turma de escola dominical? <i
+                            class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">
+                        <p style="margin-top: 10px;">Com certeza! O material é ideal e foi amplamente testado para uso
+                            por professoras e líderes de ministério. Você pode imprimir as atividades para quantos
+                            alunos tiver na sua sala, sem limite ou custo extra.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 Crescendo Com Deus. Todos os direitos reservados.</p>
-            <div class="footer-links">
-                <a href="#">Termos de Uso</a> |
-                <a href="#">Políticas de Privacidade</a>
+            <h3 style="color: white; margin-bottom: 20px;">Crescendo Com Deus</h3>
+            <p style="color: rgba(255,255,255,0.8);">&copy; 2026 Crescendo Com Deus. Todos os direitos reservados.</p>
+            <div class="footer-separator"></div>
+            <div style="margin-bottom: 25px;">
+                <p style="margin-bottom: 10px; color: rgba(255,255,255,0.9);">Dúvidas ou suporte? Entre em contato:</p>
+                <p><i class="fas fa-envelope"></i> <strong>educacaodivertida.oficial@gmail.com</strong></p>
             </div>
-            <p class="disclaimer">Este site não faz parte do Facebook ou Instagram. Além disso, esse site não é
-                endossado pelo Facebook em nenhum aspecto. FACEBOOK é uma marca comercial da FACEBOOK, Inc.</p>
+            <div style="margin-bottom: 30px; font-size: 0.9rem;">
+                <a href="#">Termos de Uso</a> &nbsp;|&nbsp; <a href="#">Políticas de Privacidade</a>
+            </div>
+            <p
+                style="font-size: 0.75rem; color: rgba(255,255,255,0.6); max-width: 600px; margin: 0 auto; line-height: 1.5;">
+                Este site não faz parte do Facebook ou Instagram. Além disso, esse site não é endossado pelo Facebook em
+                nenhum aspecto. FACEBOOK é uma marca comercial da FACEBOOK, Inc.
+            </p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-
 
 </html>
