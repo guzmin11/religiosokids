@@ -998,6 +998,7 @@ h6 {
     border-radius: 50px;
     font-weight: 900;
     font-size: 1.1rem;
+    white-space: nowrap;
     box-shadow: 0 4px 10px rgba(244, 164, 38, 0.3);
 }
 
