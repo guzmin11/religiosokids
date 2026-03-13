@@ -313,6 +313,7 @@ strong.price-highlight {
 }
 
 html, body {
+  scroll-behavior: smooth;
   overflow-x: hidden;
   max-width: 100vw;
 }
@@ -601,7 +602,7 @@ img, svg {
       <div class="brow"><div><div class="btrow-title">+250 Caça-palavras Bíblicos</div><div class="btrow-desc">Passatempos que desenvolvem concentração enquanto a criança aprende histórias da Bíblia.</div></div><div class="b-img-col"><img src="bonus_wordsearch.png" alt="Caça-palavras" style="width: 100%; height: 100%; object-fit: cover;"></div><div class="b-price-col"><div class="b-old"><strong class="price-highlight">R$ 17,90</strong></div><div class="b-now">Hoje: Grátis</div></div><div class="b-chk-col"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div></div>
       <div class="brow"><div><div class="btrow-title">+250 Cruzadinhas Educativas</div><div class="btrow-desc">Fixação do aprendizado bíblico de forma desafiadora e divertida.</div></div><div class="b-img-col"><img src="bonus_crosswords.png" alt="Cruzadinhas" style="width: 100%; height: 100%; object-fit: cover;"></div><div class="b-price-col"><div class="b-old"><strong class="price-highlight">R$ 17,90</strong></div><div class="b-now">Hoje: Grátis</div></div><div class="b-chk-col"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div></div>
       <div class="brow"><div><div class="btrow-title">+100 devocionais infantis</div><div class="btrow-desc">Histórias curtas e lições preciosas para ler com seu pequeno antes de dormir.</div></div><div class="b-img-col"><img src="bonus_family_activities.png" alt="Atividades em Família" style="width: 100%; height: 100%; object-fit: cover;"></div><div class="b-price-col"><div class="b-old"><strong class="price-highlight">R$ 27,90</strong></div><div class="b-now">Hoje: Grátis</div></div><div class="b-chk-col"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div></div>
-      <div class="brow"><div><div class="btrow-title">+100 Desenhos para Colorir</div><div class="btrow-desc">Ilustrações lindas com temas bíblicos — horas de propósito e criatividade.</div></div><div class="b-img-col"><img src="bonus_bobbie_goods.png" alt="100+ Desenhos para Colorir" style="width: 100%; height: 100%; object-fit: cover;"></div><div class="b-price-col"><div class="b-old"><strong class="price-highlight">R$ 22,90</strong></div><div class="b-now">Hoje: Grátis</div></div><div class="b-chk-col"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div></div>
+      <div class="brow"><div><div class="btrow-title">100+ Desenhos para Colorir</div><div class="btrow-desc">Ilustrações lindas com temas bíblicos — horas de propósito e criatividade.</div></div><div class="b-img-col"><img src="bonus_bobbie_goods.png" alt="100+ Desenhos para Colorir" style="width: 100%; height: 100%; object-fit: cover;"></div><div class="b-price-col"><div class="b-old"><strong class="price-highlight">R$ 22,90</strong></div><div class="b-now">Hoje: Grátis</div></div><div class="b-chk-col"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div></div>
     </div>
   </div>
 </section>
@@ -630,7 +631,7 @@ img, svg {
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>+250 Caça-palavras Bíblicos</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>+250 Cruzadinhas Educativas</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>+100 devocionais infantis</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>+100 Desenhos para Colorir</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>100+ Desenhos para Colorir</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Acesso vitalício + atualizações gratuitas</li>
         </ul>
         <div class="plan-price-area">
@@ -723,5 +724,41 @@ img, svg {
   </div>
 </footer>
 
+  <script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+        
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          
+          const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+          const startPosition = window.pageYOffset;
+          const distance = targetPosition - startPosition;
+          const duration = 400; // Fast scroll (400ms)
+          let start = null;
+
+          window.requestAnimationFrame(step);
+
+          function step(timestamp) {
+            if (!start) start = timestamp;
+            const progress = timestamp - start;
+            window.scrollTo(0, easeInOutQuad(progress, startPosition, distance, duration));
+            if (progress < duration) window.requestAnimationFrame(step);
+          }
+
+          function easeInOutQuad(t, b, c, d) {
+            t /= d / 2;
+            if (t < 1) return c / 2 * t * t + b;
+            t--;
+            return -c / 2 * (t * (t - 2) - 1) + b;
+          }
+        }
+      });
+    });
+  </script>
 </body>
 </html>
